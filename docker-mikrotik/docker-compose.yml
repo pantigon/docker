@@ -1,17 +1,18 @@
 services:
     routeros:
         container_name: "mikrotik"
-        image: cnsoluciones/mikrotik:7.6
+        image: image: pantigon/mikrotik-chr:7.10.1
+        restart: unless-stopped
         privileged: true
         ports:
-            - "21:21" #ftp
-            - "22:22" #ssh
-            - "23:23" #telnet
-            - "80:80" #www
-            - "443:443" #www-ssl
+            - "2221:21" #ftp
+            - "2222:22" #ssh
+            - "2223:23" #telnet
+            - "980:80" #www
+            - "9443:443" #www-ssl
             - "1194:1194" #OVPN
             - "1450:1450" #L2TP
-            - "8291:8291" #winbox
+            - "8299:8291" #winbox
             - "8728:8728" #api
             - "8729:8729" #api-ssl
             - "13231:13231" #WireGuard
