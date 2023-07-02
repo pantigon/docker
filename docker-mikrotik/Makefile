@@ -1,7 +1,7 @@
 #!make
 
 ROUTEROS_VERSION := 7.10.1
-TARGET := pantigon/mikrotik
+TARGET := pantigon/mikrotik-chr
 
 all: build latest
 
