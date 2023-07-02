@@ -1,7 +1,7 @@
 #!make
 
-ROUTEROS_VERSION := 7.6
-TARGET := cnsoluciones/mikrotik
+ROUTEROS_VERSION := 7.10.1
+TARGET := pantigon/mikrotik
 
 all: build latest
 
