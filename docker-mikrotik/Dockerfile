@@ -1,11 +1,11 @@
 FROM --platform=$BUILDPLATFORM alpine AS build
 
-LABEL maintainer="Federico Pereira <fpereira@cnsoluciones.com>"
+LABEL maintainer="PanTigon <admin@goitoi.co>"
 
 # Configuración de variables de entorno
-ENV ROUTEROS_URL=https://download.mikrotik.com/routeros/7.6/chr-7.6.vdi.zip
-ENV ROUTEROS_IMAGE=chr-7.6.vdi
-ENV ROUTEROS_VERSION=7.6
+ENV ROUTEROS_URL=https://download.mikrotik.com/routeros/7.10.1/chr-7.10.1.vdi.zip
+ENV ROUTEROS_IMAGE=chr-7.10.1.vdi
+ENV ROUTEROS_VERSION=7.10.1
 ENV VNCPASSWORD=false
 ENV KEYBOARD=en-us
 
