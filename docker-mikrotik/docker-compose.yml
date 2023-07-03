@@ -1,7 +1,6 @@
 version: "3"
 
 services:
-
   routeros:
     container_name: "mikrotik"
     image: pantigon/mikrotik-chr:7.10.1
